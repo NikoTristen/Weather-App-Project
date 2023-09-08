@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row search">
+        <div class="col-7">
+          <form id="enter-city">
+            <input
+              id="find-weather"
+              class="form-label"
+              type="search"
+              placeholder="Enter City or Zip Code"
+            />
+            <input class="btn btn-outline-primary" type="submit" />
+          </form>
+        </div>
+        <div class="col-5">
+          <button class="findCurrentLocation btn btn-outline-primary">
+            Current Location
+          </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-8">
+          <h3 class="cityInput"></h3>
+          <h1 id="current-date">Tues. Jan 1, 2023</h1>
+          <h2 id="current-time">8:00 PM</h2>
+          <h3>
+            <div class="weatherDescription">
+
+      
+            </div>
+            <span class="mainIcon">☀️</span>
+            <span class="mainTemperature" id="switch-temp">°</span>
+            <!-- <span class="degrees" >
+          <a href="#" id="celsius">
+          °C </a> | 
+         
+          <a href="#" id="fahrenheit">°F</a>
+        </span> -->
+          </h3>
+          <!-- <p>Sunrise 8:00 AM | Sunset 8:00 PM</p> -->
+        </div>
+        <div class="col-4">
+          <ul class="weatherDetails">
+           
+            <li>Humidity=
+              <span id="humidity"></span>%
+            </li>
+            <li>Wind=
+              <span id="wind"></span>
+              mph
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+      <hr />
+    <div class="row weekDays">
+      <div class= "col-2">
+        <ul>
+        <li>
+          Tuesday
+        </li>
+        <li class="weatherIcon">
+          ⛅
+        </li>
+        <li>
+          85°
+        </li>
+      </ul>
+    </div>
+
+    <div class= "col-2">
+      <ul>
+        <li>
+          Wednesday
+        </li>
+        <li class="weatherIcon">
+          ⛅
+        </li>
+        <li>
+          85°
+        </li>
+      </ul>
+    </div>
+
+    <div class= "col-2">
+      <ul>
+        <li>
+          Thursday
+        </li>
+        <li class="weatherIcon">
+          ⛅
+        </li>
+        <li>
+          85°
+        </li>
+      </ul>
+    </div>
+
+    <div class= "col-2">
+      <ul>
+        <li>
+          Friday
+        </li>
+        <li class="weatherIcon">
+          ⛅
+        </li>
+        <li>
+          85°
+        </li>
+      </ul>
+    </div>
+
+    <div class= "col-2">
+      <ul>
+        <li>
+          Saturday
+        </li>
+        <li class="weatherIcon">
+          ⛅
+        </li>
+        <li>
+          85°
+        </li>
+      </ul>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
