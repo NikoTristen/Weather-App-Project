@@ -15,127 +15,96 @@
   </head>
   <body>
     <div class="container">
-      <div class="row search">
-        <div class="col-7">
-          <form id="enter-city">
-            <input
-              id="find-weather"
-              class="form-label"
-              type="search"
-              placeholder="Enter City or Zip Code"
-            />
-            <input class="btn btn-outline-primary" type="submit" />
-          </form>
+      <div class="weatherApplication">
+        <div class="row search">
+          <div class="col-7">
+            <form id="enter-city">
+              <input
+                id="find-weather"
+                class="form-label"
+                type="search"
+                placeholder="Enter City or Zip Code"
+              />
+              <input class="btn btn-outline-primary" type="submit" />
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="findCurrentLocation btn btn-outline-primary">
+              Current Location
+            </button>
+          </div>
         </div>
-        <div class="col-5">
-          <button class="findCurrentLocation btn btn-outline-primary">
-            Current Location
-          </button>
+
+        <div class="row">
+          <div class="col-8">
+            <h3 class="cityInput"></h3>
+            <h1 id="current-date">Tues. Jan 1, 2023</h1>
+            <h2 id="current-time">8:00 PM</h2>
+            <h3>
+              <div class="weatherDescription"></div>
+              <span class="mainIcon">☀️</span>
+              <span class="mainTemperature" id="switch-temp">°</span>
+            </h3>
+          </div>
+          <div class="col-4">
+            <ul class="weatherDetails">
+              <li>Humidity= <span id="humidity"></span>%</li>
+              <li>Wind= <span id="wind"></span>mph</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row weekDays">
+          <div class="col-2">
+            <ul>
+              <li>Tuesday</li>
+              <li class="weatherIcon">⛅</li>
+              <li>85°</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <ul>
+              <li>Wednesday</li>
+              <li class="weatherIcon">⛅</li>
+              <li>85°</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <ul>
+              <li>Thursday</li>
+              <li class="weatherIcon">⛅</li>
+              <li>85°</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <ul>
+              <li>Friday</li>
+              <li class="weatherIcon">⛅</li>
+              <li>85°</li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <ul>
+              <li>Saturday</li>
+              <li class="weatherIcon">☀️</li>
+              <li>85°</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-8">
-          <h3 class="cityInput"></h3>
-          <h1 id="current-date">Tues. Jan 1, 2023</h1>
-          <h2 id="current-time">8:00 PM</h2>
-          <h3>
-            <div class="weatherDescription">
-
-      
-            </div>
-            <span class="mainIcon">☀️</span>
-            <span class="mainTemperature" id="switch-temp">°</span>
-       
-          </h3>
-          
-        </div>
-        <div class="col-4">
-          <ul class="weatherDetails">
-           
-            <li>Humidity=
-              <span id="humidity"></span>%
-            </li>
-            <li>Wind=
-              <span id="wind"></span>
-              mph
-            </li>
-          </ul>
-
-        </div>
-      </div>
-
-      <hr />
-    <div class="row weekDays">
-      <div class= "col-2">
-        <ul>
-        <li>
-          Tuesday
-        </li>
-        <li class="weatherIcon">
-          ⛅
-        </li>
-        <li>
-          85°
-        </li>
-      </ul>
-    </div>
-
-    <div class= "col-2">
-      <ul>
-        <li>
-          Wednesday
-        </li>
-        <li class="weatherIcon">
-          ⛅
-        </li>
-        <li>
-          85°
-        </li>
-      </ul>
-    </div>
-
-    <div class= "col-2">
-      <ul>
-        <li>
-          Thursday
-        </li>
-        <li class="weatherIcon">
-          ⛅
-        </li>
-        <li>
-          85°
-        </li>
-      </ul>
-    </div>
-
-    <div class= "col-2">
-      <ul>
-        <li>
-          Friday
-        </li>
-        <li class="weatherIcon">
-          ⛅
-        </li>
-        <li>
-          85°
-        </li>
-      </ul>
-    </div>
-
-    <div class= "col-2">
-      <ul>
-        <li>
-          Saturday
-        </li>
-        <li class="weatherIcon">
-          ☀️
-        </li>
-        <li>
-          85°
-        </li>
-      </ul>
-    </div>
+      <p class="editor">
+        <a href="https://github.com/NikoTristen/Weather-App-Project"
+          >Open-source code
+        </a>
+        by NikoTristen
+      </p>
     </div>
     <script src="src/index.js"></script>
   </body>

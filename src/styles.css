@@ -22,16 +22,47 @@ ul li {
   text-align: center;
 }
 
+a{text-decoration: none;}
+
+a:hover{text-decoration: underline;}
+
+
 #find-weather {
-  font-size: 18px;
+  font-size: 16px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+      0 0 0 1px rgba(0, 0, 0, 0.08);
+  border: 0px;
+  padding: 7px;
+  margin-right: 10px;
+border-radius: 5px;
 }
 
-.container {
+.weatherApplication {
   width: 600px;
-  height: 450px;
-  border: 1px solid black;
+  height: 425px;
+  border: 0px solid black;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+    0 0 0 1px rgba(0, 0, 0, 0.08); 
   padding: 30px;
   margin: auto;
   display: block;
   margin-top: 60px;
+  border-radius: 5px;
 }
+
+.editor{
+  padding-top: 10px;
+  margin-left: 170px;
+  
+}
+
+.weatherDetails{
+  margin-top: 130px;
+  padding-left: 0%;
+}
+
+.findCurrentLocation{
+  max-width: 150px;
+  margin-top: 3px;
+}
+
